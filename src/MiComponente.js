@@ -21,17 +21,17 @@ export class MiComponente extends LitElement {
   constructor() {
     super();
     this.title = 'Hey there';
-    this.counter = 5;
+    this.counter = 1;
   }
 
   __increment() {
-    this.counter += 1;
+    this.counter *= 2;
   }
 
   render() {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <button @click=${this.__increment}>Duplicar</button>
     `;
   }
 }
