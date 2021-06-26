@@ -30,6 +30,7 @@ export class MiComponente extends LitElement {
 
   render() {
     return html`
+      <p><b>Adrian</b></p>
       <h2>${this.title} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>Duplicar</button>
     `;
